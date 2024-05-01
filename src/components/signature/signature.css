@@ -16,3 +16,11 @@
 .signature--img{
     height: 55px;
 }
+
+@media (min-width: 0px) and (max-width: 900px){
+    .signature{
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+    }
+}

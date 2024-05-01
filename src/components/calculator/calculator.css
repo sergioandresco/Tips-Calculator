@@ -18,7 +18,8 @@
     background-color: white;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    top: 29%;
+    transform: translate(-50%, -50%);
     gap: 28px;
     padding-top: 43px;
     padding-bottom: 43px;
@@ -44,4 +45,10 @@
 .bx--input{
     width: 240px;
     height: 30px;
+    text-align: center;
+}
+
+.calculator--border{
+    padding-bottom: 38px;
+    border-bottom: 1px solid black;
 }

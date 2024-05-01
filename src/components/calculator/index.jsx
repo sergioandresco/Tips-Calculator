@@ -33,16 +33,21 @@ function Calculator(){
 
             <div className="calculator--bx">
                 <label htmlFor="" className='bx--title'>Enter the account value</label>
-                <input type="number" className='bx--input' value={value} onChange={handleValueChange} />
+                <input 
+                    type="number" 
+                    className='bx--input' 
+                    value={value} 
+                    onChange={handleValueChange}
+                />
             </div>
 
-            <div className="calculator--bx">
+            <div className="calculator--bx calculator--border">
                 <label htmlFor="" className='bx--title'>Enter the tip percentage you want to leave</label>
                 <input type="number" className='bx--input' value={percentage} onChange={handlePercentageChange} />
             </div>
 
             <div className="calculator--bx">
-                <label htmlFor="" className='bx--title'>Total</label>
+                <label htmlFor="" className='bx--title'>Total with tip percentage</label>
                 <span>${total.toFixed(2)}</span>
             </div>
 

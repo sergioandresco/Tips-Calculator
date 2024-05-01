@@ -1,0 +1,47 @@
+@keyframes move-border {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 28px;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    border-radius: 12px;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+    animation: move-border 2s infinite;
+}
+
+.calculator--bx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+
+.bx--title{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.3em;
+    width: 200px;
+    text-align: center;
+}
+
+.bx--input{
+    width: 240px;
+    height: 30px;
+}
